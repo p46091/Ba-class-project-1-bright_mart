@@ -3,7 +3,7 @@ import pickle
 import numpy as np
 
 # Load the saved model
-model = pickle.load(open('linear_reg.sav', 'rb'))
+model = joblib.load(open('linear_reg.sav', 'rb'))
 
 # Input features
 TV = st.number_input('TV Advertising Budget', min_value=0.0)
